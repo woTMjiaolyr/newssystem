@@ -12,7 +12,7 @@
 
 二、未授权重定向
       1.<Route path='/' render={() =>localStorage.getItem('token') ?<NewsSandBox></NewsSandBox> :<Redirect to='/login' />} />
-       根据localStoragelocalStorage.getItem('token')来判断是否授权，继而是否需要重定向
+       根据localStorage   localStorage.getItem('token')来判断是否授权，继而是否需要重定向
        
        Web Storage实际上由两部分组成：sessionStorage与localStorage。
 
